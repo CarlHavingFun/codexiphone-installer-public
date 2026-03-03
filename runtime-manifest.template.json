@@ -1,0 +1,8 @@
+{
+  "version": "0.1.1+YYYYMMDDTHHMMSSZ",
+  "tarball_url": "https://downloads.example.com/codexiphone/codexiphone-runtime.tar.gz",
+  "zip_url": "https://downloads.example.com/codexiphone/codexiphone-runtime.zip",
+  "sha256_tar_gz": "<sha256-of-tar-gz>",
+  "sha256_zip": "<sha256-of-zip>",
+  "published_at": "YYYY-MM-DDTHH:MM:SSZ"
+}
