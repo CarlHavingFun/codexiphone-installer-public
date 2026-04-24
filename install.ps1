@@ -23,7 +23,7 @@ if (-not $ManifestUrl) {
   if ($env:CODEXIPHONE_MANIFEST_URL) {
     $ManifestUrl = $env:CODEXIPHONE_MANIFEST_URL
   } else {
-    $ManifestUrl = "https://downloads.example.com/codexiphone/runtime-manifest.json"
+    $ManifestUrl = "https://product.example.com/codexiphone/runtime-manifest.json"
   }
 }
 
@@ -119,6 +119,6 @@ Write-Host "[codexiphone-install] starting quick guide installer"
 try {
   & $quickGuide -PlatformBaseUrl $PlatformBaseUrl -PlatformAccessToken $PlatformAccessToken -Target $Target
 } catch {
-  Write-NetworkHint "$(if ($PlatformBaseUrl) { $PlatformBaseUrl } else { 'https://platform.example.com' })"
+  Write-NetworkHint "$(if ($PlatformBaseUrl) { $PlatformBaseUrl } else { 'https://product.example.com/codex-platform' })"
   throw
 }

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-DEFAULT_MANIFEST_URL="https://downloads.example.com/codexiphone/runtime-manifest.json"
+DEFAULT_MANIFEST_URL="https://product.example.com/codexiphone/runtime-manifest.json"
 MANIFEST_URL="${CODEXIPHONE_MANIFEST_URL:-$DEFAULT_MANIFEST_URL}"
 RUNTIME_TARBALL_URL="${CODEXIPHONE_RUNTIME_TARBALL_URL:-}"
 RUNTIME_TARBALL_SHA256="${CODEXIPHONE_RUNTIME_TARBALL_SHA256:-}"
@@ -168,7 +168,7 @@ main() {
 
   log "starting quick guide installer"
   if ! bash "$PROJECT_DIR/deploy/agent/quick_guide.sh" "$@"; then
-    print_network_hint "${PLATFORM_BASE_URL:-https://platform.example.com}"
+    print_network_hint "${PLATFORM_BASE_URL:-https://product.example.com/codex-platform}"
     exit 1
   fi
 }

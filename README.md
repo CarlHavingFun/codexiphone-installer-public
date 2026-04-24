@@ -11,7 +11,7 @@ This repository must not contain iOS source code, Swift files, Xcode project fil
 
 ## Runtime manifest contract
 Production manifest endpoint:
-- `https://downloads.example.com/codexiphone/runtime-manifest.json`
+- `https://product.example.com/codexiphone/runtime-manifest.json`
 
 Required fields:
 - `version`
